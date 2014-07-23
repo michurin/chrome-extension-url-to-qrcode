@@ -11,8 +11,13 @@ You can customize
   - size of image and
   - error correction levels.
 
-And also you can setup URL parts substitutions.
+And also you can setup URL substitutions.
+
 For example, extension can automaticaly change
-http://bbc.com/page to http://m.bbc.com/page.
+substring `.wikipedia.org/wiki/` to `.m.wikipedia.org/wiki/` to
+convert URLs like this
+`http://en.wikipedia.org/wiki/Google`
+to mobile version
+`http://en.m.wikipedia.org/wiki/Google`.
 
 Visit the options page to use these features.
