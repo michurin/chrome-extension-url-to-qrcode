@@ -59,7 +59,7 @@
 
   function mk_radio(name, id, checked, label, onchange) {
     return mk.label({
-      for: id
+      'for': id
     }, [
       mk.input({
         type: 'radio',
@@ -99,8 +99,8 @@
           mk.td([mk.button({onclick: function () {
             input_area.style.display = 'none';
           }}, 'cancel')])
-        ]),
-      ])
+        ])
+      ]) // mk.table
     ]));
     var table = [];
     if (substitutions) {

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "URL to QR code",
-  "version": "0.3.0.2",
+  "version": "0.3.0.3",
 
   "description": "This extension generate QR-code with URL of current openned page.",
   "icons": {
