@@ -1,0 +1,60 @@
+body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+input[type="radio"], input[type="checkbox"], label {
+  margin: 0;
+  vertical-align: middle;
+}
+
+label {
+  display: block;
+}
+
+button {
+  margin: 0;
+}
+
+#input-area {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+}
+
+#input-area div {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #fff;
+}
+
+#input-area table {
+  width: 100%;
+}
+
+#input-area input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#input-area tr:nth-child(5) td:nth-child(2) {
+  text-align: right;
+}
+
+#list tr:not(:last-child) td:nth-child(1) {
+  font-family: monospace;
+  padding: 0 1em 0 0;
+  color: #800;
+}
+
+#list tr:not(:last-child) td:nth-child(2) {
+  font-family: monospace;
+  padding: 0 1em 0 0;
+  color: #080;
+}
