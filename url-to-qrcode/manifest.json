@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "URL to QR code",
-  "version": "0.3.0.4",
+  "version": "0.3.0.5",
 
   "description": "This extension generate QR-code with URL of current openned page.",
   "icons": {
@@ -26,7 +26,7 @@
 
   "permissions": [
     "https://chart.googleapis.com/",
-    "tabs",
+    "activeTab",
     "storage"
   ],
 
