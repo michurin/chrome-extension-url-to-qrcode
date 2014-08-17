@@ -17,6 +17,23 @@ button {
   margin: 0;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td, tr {
+  padding: 0;
+  margint: 0;
+}
+
+table span {
+  cursor: pointer;
+}
+
+td.wide {
+  padding: 0 10px;
+}
+
 #input-area {
   display: none;
   position: fixed;

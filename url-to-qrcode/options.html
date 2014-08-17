@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8" />
   <title>URL to QR code</title>
   <link rel="stylesheet" href="options.css" />
+
 </head>
 <body>
 
   <h1><b>Options</b> | URL to QR code</h1>
+
+  <div id="input-area">
+    <div>
+      <table>
+        <tr><td colspan="2">From (string to replace):</td></tr>
+        <tr><td colspan="2"><input type="text" id="input-area-from"></td></tr>
+        <tr><td colspan="2">To (replacement):</td></tr>
+        <tr><td colspan="2"><input type="text" id="input-area-to"></td></tr>
+        <tr>
+          <td><button id="input-area-save">save</button></td>
+          <td><button id="input-area-cancel">cancel</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="dom_utils.js"></script>
+  <script src="storage.js"></script>
   <script src="options.js"></script>
 
 </body>

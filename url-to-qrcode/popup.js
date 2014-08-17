@@ -1,28 +1,21 @@
-/*global window, chrome */
+/*global chrome */
+/*global storage, by_id */
 /*jslint
   indent:   2,
   vars:     true
 */
 
 
-(function (d) {
+(function () {
 
   'use strict';
-
-  function by_id(x) {
-    return d.getElementById(x);
-  }
 
   chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
     var ht = by_id('t');
     if (tabs.length !== 1) {
       ht.innerText = 'ERROR: LEN(TABS)=' + tabs.length;
     } else {
-      chrome.storage.local.get({
-        'error_correction_level': 'L',
-        'size': 300,
-        'substitutions': null
-      }, function (state) {
+      storage.get(['error_correction_level', 'size', 'substitutions'], function (state) {
         var txt = tabs[0].url;
         if (state.substitutions) {
           state.substitutions.forEach(function (v) {
@@ -40,4 +33,4 @@
     }
   });
 
-}(window.document));
+}());
